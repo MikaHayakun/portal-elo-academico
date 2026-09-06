@@ -80,7 +80,7 @@ data/                banco local (não versionado)
 
 ## Documentação Complementar
 
-- [Requisitos e Rastreabilidade da PoC](./docs/REQUISITOS.md)
-- [Arquitetura de Dados, Entidades e DER](./docs/ARQUITETURA.md)
-- [Checklist e Roteiro de Testes](./docs/ENTREGA.md)
-- [Revisão das dependências e do package-lock.json](./docs/DEPENDENCIAS.md)
+- [Requisitos](./docs/REQUISITOS.md)
+- [Arquitetura e Modelo de Dados](./docs/ARQUITETURA.md)
+- [Entrega e Testes](./docs/ENTREGA.md)
+- [Dependências](./docs/DEPENDENCIAS.md)
