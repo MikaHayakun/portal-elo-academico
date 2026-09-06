@@ -1,12 +1,15 @@
-# Requisitos e revisão da ideação
+# Requisitos
 
-## Base documental
+## Fundamentação e Base Documental
+O planejamento e a especificação de requisitos desta Prova de Conceito (PoC) foram estruturados com base nos materiais de orientação da disciplina de **Desenvolvimento de Sistemas Orientados a Dispositivos Móveis e Baseados na Web**. 
 
-A disciplina identificada no trabalho `PI.1ªEntrega.Grupo02.pdf` é Desenvolvimento de Sistemas Orientados a Dispositivos Móveis e Baseados na Web. Foram priorizados `conteudo_projeto_integrador.pdf`, `Projeto_Integrador.pdf`, `Projeto Integrador - 1 Entrega.pdf` e as quarta e quinta webconferências de Adriano Milanez. O material da segunda etapa de Gustavo Calixto confirma os seis critérios de avaliação, mas apresenta outro prazo.
+O alinhamento teórico e a rastreabilidade do projeto sustentam-se em três pilares:
 
-Os enunciados `_278_2025` identificam Desenvolvimento Estruturado de Sistemas. O manual `Manual_2024_4` identifica Diagnóstico de Soluções de TI, primeiro período. Não foram tratados como rubrica principal deste PI. O DER abaixo é documentação complementar útil, não substituto da PoC funcional.
+1. **Estratégia de Experiência do Usuário (UX):** A modelagem de personas e o mapeamento das jornadas de uso seguiram as metodologias de design centrado no usuário abordadas nas webconferências de orientação da disciplina. Esses conceitos foram aplicados para justificar a interface intuitiva desenhada para a nossa persona principal.
 
-Referências por posição no PDF: quarta webconferência pp. 19–23; quinta pp. 10–16 e 18–22; orientação de conteúdo pp. 1–5. O conjunto de documentos está na pasta de trabalho original, fora do repositório público.
+2. **Rastreabilidade de Escopo:** O relatório consolidado da *1ª Entrega* do grupo serviu como base obrigatória. Isso garante que a PoC desenvolvida em Next.js seja a resposta direta ao problema de descentralização e fragmentação de dados identificado na etapa inicial do nosso projeto.
+
+3. **Critérios de Validação Técnica:** Os requisitos de banco de dados local (SQLite) e a documentação do fluxo de uso foram estruturados de acordo com a solicitação oficial de avaliação de sistemas da segunda etapa do projeto integrador.
 
 ## Problema, público e solução
 
