@@ -8,8 +8,15 @@ Aplicação Web para centralizar cadastros de pessoas físicas e jurídicas de u
 
 ## Equipe
 
-- [MikaHayakun](https://github.com/MikaHayakun)
-- [juanossilva1](https://github.com/juanossilva1)
+- Adrian Juan De Oliveira Silva
+- Everton de Oliveira Amaral
+- Ludmylla Fernanda Costa Oliveira
+- Uri Dicaio Silva
+- Zeli Oliveira Silva
+
+Perfis GitHub já informados: [MikaHayakun](https://github.com/MikaHayakun) e [juanossilva1](https://github.com/juanossilva1).
+
+Todos os integrantes devem ter acesso ao repositório e histórico de colaborações próprias. Consulte o [guia de contribuição](CONTRIBUTING.md) e o [checklist de entrega](docs/ENTREGA.md).
 
 ## Executar localmente
 
@@ -22,6 +29,8 @@ npm ci
 npm run setup
 npm run dev
 ```
+
+`npm ci` instala as dependências nas versões registradas no projeto. `npm run setup` cria as tabelas e carrega os dados fictícios; não é necessário executar scripts SQL manualmente. `npm run dev` inicia o servidor Next.js, que atende tanto às páginas quanto às rotas do backend. Mantenha o terminal aberto durante o uso e pressione `Ctrl+C` para encerrar.
 
 Acesse **http://localhost:3000**. O setup cria o banco `data/elo.sqlite`, cinco cadastros fictícios e duas contas. As senhas aleatórias ficam no arquivo local `.env.local`:
 
@@ -92,9 +101,9 @@ O workflow de GitHub Actions executa lint, tipos, testes, build, formatação e 
 - [Vídeo demonstrativo, até um minuto](docs/demo-projeto.mp4)
 - [Guia de contribuição](CONTRIBUTING.md)
 
-Os perfis GitHub divulgados com autorização estão na seção Equipe. Os materiais acadêmicos de origem permanecem na pasta local restrita. A versão pública não reproduz PDFs, banco de dados local, credenciais ou lista nominal extraída dos documentos.
+Os nomes informados para a entrega e os perfis GitHub autorizados estão na seção Equipe. Os materiais acadêmicos de origem permanecem na pasta local restrita. PDFs, banco de dados local e credenciais não são publicados.
 
-Para a entrega ao professor, a equipe deve incluir a identificação dos integrantes no material restrito e registrar suas contribuições reais no GitHub. Os perfis dos demais integrantes ainda precisam ser informados. A presença na seção Equipe não substitui o registro das contribuições. Essa pendência impede considerar integralmente atendido o item de colaboração da rubrica.
+O README contém os cinco nomes e as instruções de instalação, preparação do banco e inicialização do servidor. Para concluir o requisito de colaboração, ainda é necessário confirmar a conta de cada integrante, verificar o aceite dos convites e registrar contribuições reais de todos. A presença na seção Equipe não substitui esse histórico.
 
 ## Limites desta prova de conceito
 

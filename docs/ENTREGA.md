@@ -20,8 +20,11 @@ A tabela identifica evidências, não antecipa nota do professor.
 - [x] Revisão da ideação e escopo documentados.
 - [x] Implementação frontend/backend e persistência preparada.
 - [x] Instruções de execução e contas locais documentadas.
-- [ ] Confirmar identificação da equipe no material restrito e vincular os cinco integrantes no GitHub.
-- [ ] Cada integrante realizar e registrar sua contribuição real.
+- [x] README com os nomes dos cinco integrantes informados para a entrega.
+- [x] README com instalação das dependências, carga inicial do banco e inicialização do servidor.
+- [ ] Confirmar qual conta GitHub pertence a cada integrante.
+- [ ] Todos os cinco integrantes com acesso ao repositório, após o aceite dos convites necessários.
+- [ ] Cada integrante realizar e registrar sua contribuição real, com links para commits ou pull requests.
 - [ ] Conferir prazo e formato de postagem no AVA.
 - [ ] Integrante responsável postar a entrega pelo Blackboard.
 
@@ -42,4 +45,4 @@ O script `npm run demo` captura a demonstração a partir de uma instância de t
 
 ## Privacidade da publicação
 
-Por orientação da titular, PDFs de origem, lista nominal extraída dos materiais, arquivos de banco e credenciais não integram o repositório público. A identificação acadêmica deve ser fornecida ao professor por canal restrito. O check `npm run check:public` bloqueia o versionamento dos principais formatos de material e banco. A documentação pública descreve a implementação e seus requisitos, sem anexar os documentos de origem.
+Os cinco nomes fornecidos pela titular para atender aos requisitos finais estão publicados no README. PDFs de origem, arquivos de banco e credenciais permanecem privados. O check `npm run check:public` bloqueia o versionamento dos principais formatos de material e banco. A documentação pública descreve a implementação e seus requisitos, sem anexar os documentos de origem.
