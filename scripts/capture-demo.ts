@@ -45,7 +45,9 @@ async function main() {
   await page.screenshot({ path: "docs/images/revisao.png" });
   await until(33);
   await page.getByRole("button", { name: "Confirmar e salvar" }).click();
-  await expect(page.getByRole("status")).toContainText("Cadastro atualizado");
+  await expect(page.locator(".success-banner[role=status]")).toContainText(
+    "Cadastro atualizado",
+  );
   await until(39);
   await page.getByRole("button", { name: /Abrir cadastro de Clara/ }).click();
   await expect(page.getByLabel("Telefone", { exact: true })).toHaveValue(

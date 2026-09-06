@@ -50,7 +50,9 @@ test("jornada RH: filtra, edita, confirma persistência, audita e encerra sessã
   await page.getByLabel("Telefone", { exact: true }).fill("(11) 90000-8888");
   await page.getByRole("button", { name: "Revisar dados" }).click();
   await page.getByRole("button", { name: "Confirmar e salvar" }).click();
-  await expect(page.getByRole("status")).toContainText("Cadastro atualizado");
+  await expect(page.locator(".success-banner[role=status]")).toContainText(
+    "Cadastro atualizado",
+  );
   await page.reload();
   await page.getByLabel("Buscar pessoas").fill("Clara");
   await page.getByRole("button", { name: /Abrir cadastro de Clara/ }).click();
@@ -88,7 +90,9 @@ test("cadastro PJ, validação, duplicidade, inativação e busca vazia", async 
   await page.getByLabel("CNPJ numérico").fill("11444777000161");
   await page.getByRole("button", { name: "Revisar dados" }).click();
   await page.getByRole("button", { name: "Confirmar e salvar" }).click();
-  await expect(page.getByRole("status")).toContainText("Cadastro criado");
+  await expect(page.locator(".success-banner[role=status]")).toContainText(
+    "Cadastro criado",
+  );
   await page.getByLabel("Buscar pessoas").fill("Empresa de Teste E2E");
   await page.getByRole("button", { name: /Abrir cadastro de Empresa/ }).click();
   await page
