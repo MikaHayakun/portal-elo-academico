@@ -15,7 +15,8 @@ Aplicação Web para centralizar cadastros de pessoas físicas e jurídicas de u
 - Uri Dicaio Silva
 
 ## Revisita ao Projeto e Justificativa da PoC
-Com base na modelagem estratégica da primeira etapa, revisitamos as jornadas de uso e definimos que a nossa **Prova de Conceito (PoC)** focará na rotina de **consulta e atualização de cadastros de prestadores terceirizados** pelo usuário do RH (Gustavo). 
+
+Com base na modelagem estratégica da primeira etapa, revisitamos as jornadas de uso e definimos que a nossa **Prova de Conceito (PoC)** focará na rotina de **consulta e atualização de cadastros de prestadores terceirizados** pelo usuário do RH (Gustavo).
 
 A escolha deste fluxo se justifica por ser o processo administrativo de maior volume e criticidade na instituição, permitindo-nos validar de ponta a ponta a busca por CPF/CNPJ, a usabilidade da interface de revisão e a segurança da persistência de dados.
 
@@ -78,6 +79,8 @@ data/                banco local (não versionado)
 ```
 
 ## Documentação Complementar
-* [Requisitos e Rastreabilidade da PoC](./docs/REQUISITOS.md)
-* [Arquitetura de Dados, Entidades e DER](./docs/ARQUITETURA.md)
-* [Checklist e Roteiro de Testes](./docs/ENTREGA.md)
+
+- [Requisitos e Rastreabilidade da PoC](./docs/REQUISITOS.md)
+- [Arquitetura de Dados, Entidades e DER](./docs/ARQUITETURA.md)
+- [Checklist e Roteiro de Testes](./docs/ENTREGA.md)
+- [Revisão das dependências e do package-lock.json](./docs/DEPENDENCIAS.md)
