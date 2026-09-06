@@ -1,0 +1,9 @@
+node_modules
+.next
+data
+.tools
+playwright-report
+test-results
+package-lock.json
+docs/images
+docs/demo-projeto.mp4

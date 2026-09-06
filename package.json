@@ -1,0 +1,42 @@
+{
+  "name": "portal-elo-academico",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "lint": "eslint",
+    "setup": "tsx scripts/setup.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/domain.test.ts",
+    "test:e2e": "playwright test",
+    "check": "npm run lint && npm run typecheck && npm test && npm run build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "demo": "tsx scripts/capture-demo.ts",
+    "check:public": "node scripts/check-public-files.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^1.41.0",
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.4",
+    "prettier": "^3.9.6",
+    "tsx": "^4.23.13",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=24.15.0 <25"
+  }
+}

@@ -1,0 +1,23 @@
+1
+00:00:00,000 --> 00:00:07,000
+Elo Acadêmico: cadastros centralizados para RH e secretaria.
+
+2
+00:00:07,000 --> 00:00:15,000
+Gustavo, do RH, localiza uma prestadora por vínculo, tipo e nome.
+
+3
+00:00:15,000 --> 00:00:25,000
+A ficha permite consultar e atualizar os dados de contato.
+
+4
+00:00:25,000 --> 00:00:39,000
+Revisão antes de confirmar. A alteração é gravada no banco.
+
+5
+00:00:39,000 --> 00:00:48,000
+Nova consulta e histórico: responsável, data e valores alterados.
+
+6
+00:00:48,000 --> 00:00:56,000
+Next.js + React + TypeScript + SQLite. Menos planilhas, mais conexão.
