@@ -14,9 +14,10 @@ Aplicação Web para centralizar cadastros de pessoas físicas e jurídicas de u
 - Uri Dicaio Silva
 - Zeli Oliveira Silva
 
-Perfis GitHub já informados: [MikaHayakun](https://github.com/MikaHayakun) e [juanossilva1](https://github.com/juanossilva1).
+## Revisita ao Projeto e Justificativa da PoC
+Com base na modelagem estratégica da primeira etapa, revisitamos as jornadas de uso e definimos que a nossa **Prova de Conceito (PoC)** focará na rotina de **consulta e atualização de cadastros de prestadores terceirizados** pelo usuário do RH (Gustavo). 
 
-Todos os integrantes devem ter acesso ao repositório e histórico de colaborações próprias. Consulte o [guia de contribuição](CONTRIBUTING.md) e o [checklist de entrega](docs/ENTREGA.md).
+A escolha deste fluxo se justifica por ser o processo administrativo de maior volume e criticidade na instituição, permitindo-nos validar de ponta a ponta a busca por CPF/CNPJ, a usabilidade da interface de revisão e a segurança da persistência de dados.
 
 ## Executar localmente
 
@@ -39,16 +40,14 @@ Acesse **http://localhost:3000**. O setup cria o banco `data/elo.sqlite`, cinco 
 | `admin@elo.local`   | `ELO_ADMIN_PASSWORD`    | Consultar, cadastrar, editar, ativar/inativar e consultar histórico     |
 | `gustavo@elo.local` | `ELO_OPERATOR_PASSWORD` | Consultar, cadastrar pessoas ativas, editar dados e consultar histórico |
 
-Abra `.env.local` no editor para consultar as senhas. Não publique esse arquivo. O setup é repetível: preserva registros e senhas existentes; alterar a variável posteriormente não redefine a senha do usuário já criado.
+Abra `.env.local` no editor para consultar as senhas.
 
-Para testar a versão otimizada:
+Para testar a versão otimizada (produção):
 
 ```bash
 npm run build
 npm start
 ```
-
-O servidor escuta somente em `127.0.0.1`. `APP_ORIGIN` deve coincidir com o endereço usado no navegador, incluindo protocolo e porta. Para usar outro endereço ou hospedar o sistema, configure essa variável e a interface do servidor explicitamente. Uma hospedagem precisa de processo Node e disco persistente; o SQLite local não deve ser colocado em filesystem efêmero ou compartilhado entre réplicas.
 
 ## O que funciona
 
@@ -78,37 +77,7 @@ docs/                requisitos, arquitetura, entrega e evidências
 data/                banco local (não versionado)
 ```
 
-O backend usa rotas do próprio Next.js. Um único projeto reduz duplicação de configuração e permite compartilhar tipos e validações. O CSS mantém a identidade visual sem dependência de um framework de estilos. Não há necessidade de acrescentar outra linguagem de backend à PoC.
-
-## Verificações
-
-```bash
-npm run check
-npx playwright install chromium
-npm run test:e2e
-npm run format:check
-```
-
-Os testes de navegador usam banco temporário independente, servidor na porta 3100 e credenciais exclusivas de teste. Não alteram `data/elo.sqlite`. O build deve existir antes de `test:e2e`. No Linux, se houver bibliotecas de navegador ausentes, utilize `npx playwright install --with-deps chromium` com a autorização administrativa do ambiente.
-
-O workflow de GitHub Actions executa lint, tipos, testes, build, formatação e testes de navegador. Consulte [evidências e limites da validação](docs/VALIDACAO.md).
-
-## Entrega acadêmica
-
-- [Requisitos, revisão da ideação e rastreabilidade](docs/REQUISITOS.md)
-- [Arquitetura, entidades e DER](docs/ARQUITETURA.md)
-- [Checklist da rubrica e roteiro do vídeo](docs/ENTREGA.md)
-- [Vídeo demonstrativo, até um minuto](docs/demo-projeto.mp4)
-- [Guia de contribuição](CONTRIBUTING.md)
-
-Os nomes informados para a entrega e os perfis GitHub autorizados estão na seção Equipe. Os materiais acadêmicos de origem permanecem na pasta local restrita. PDFs, banco de dados local e credenciais não são publicados.
-
-O README contém os cinco nomes e as instruções de instalação, preparação do banco e inicialização do servidor. Para concluir o requisito de colaboração, ainda é necessário confirmar a conta de cada integrante, verificar o aceite dos convites e registrar contribuições reais de todos. A presença na seção Equipe não substitui esse histórico.
-
-## Limites desta prova de conceito
-
-Cada cadastro possui um vínculo principal; PJ é limitada a prestador. Não inclui integração com sistemas acadêmicos externos, importação, exclusão definitiva, cadastro público de usuários, recuperação de senha, gestão de contas pela interface ou CNPJ alfanumérico. A busca textual usa o comportamento de caixa do SQLite e não remove acentos. O histórico exibe os últimos 100 eventos por consulta. A lista usa oito registros por página.
-
-As contas são provisionadas pelo setup. Uma implantação institucional exige ampliar o gerenciamento de usuários, recuperação de acesso, autorização por setor, rotina de backup/restauração e operação com HTTPS. A PoC não representa uma certificação de segurança ou conformidade institucional.
-
-Fontes técnicas: [Next.js — instalação](https://nextjs.org/docs/app/getting-started/installation) e [Node.js — SQLite](https://nodejs.org/api/sqlite.html). Os PDFs de orientação da disciplina foram usados como referência local e não foram republicados neste repositório.
+## Documentação Complementar
+* [Requisitos e Rastreabilidade da PoC](./docs/REQUISITOS.md)
+* [Arquitetura de Dados, Entidades e DER](./docs/ARQUITETURA.md)
+* [Checklist e Roteiro de Testes](./docs/ENTREGA.md)
