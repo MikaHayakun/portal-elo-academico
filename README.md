@@ -6,6 +6,11 @@ Aplicação Web para centralizar cadastros de pessoas físicas e jurídicas de u
 
 ![Gestão de pessoas](docs/images/pessoas.png)
 
+## Equipe
+
+- [MikaHayakun](https://github.com/MikaHayakun)
+- [juanossilva1](https://github.com/juanossilva1)
+
 ## Executar localmente
 
 Requisitos: **Node.js 24.15 ou superior na série 24**, npm e Git. O SQLite é fornecido pelo Node; não é necessário instalar um servidor de banco, PHP ou MySQL.
@@ -87,9 +92,9 @@ O workflow de GitHub Actions executa lint, tipos, testes, build, formatação e 
 - [Vídeo demonstrativo, até um minuto](docs/demo-projeto.mp4)
 - [Guia de contribuição](CONTRIBUTING.md)
 
-Os nomes dos integrantes e os materiais acadêmicos de origem permanecem na pasta local restrita, conforme orientação de privacidade da titular. A versão pública não reproduz PDFs, banco de dados local, credenciais ou lista nominal extraída dos documentos.
+Os perfis GitHub divulgados com autorização estão na seção Equipe. Os materiais acadêmicos de origem permanecem na pasta local restrita. A versão pública não reproduz PDFs, banco de dados local, credenciais ou lista nominal extraída dos documentos.
 
-Para a entrega ao professor, a equipe deve incluir a identificação dos integrantes no material restrito e registrar suas contribuições reais no GitHub. Os usuários dos cinco integrantes ainda precisam ser informados. Nenhum histórico de participação foi simulado. Essa pendência impede considerar integralmente atendido o item de colaboração da rubrica.
+Para a entrega ao professor, a equipe deve incluir a identificação dos integrantes no material restrito e registrar suas contribuições reais no GitHub. Os perfis dos demais integrantes ainda precisam ser informados. A presença na seção Equipe não substitui o registro das contribuições. Essa pendência impede considerar integralmente atendido o item de colaboração da rubrica.
 
 ## Limites desta prova de conceito
 
