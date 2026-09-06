@@ -11,8 +11,8 @@ Aplicação Web para centralizar cadastros de pessoas físicas e jurídicas de u
 - Adrian Juan De Oliveira Silva
 - Everton de Oliveira Amaral
 - Ludmylla Fernanda Costa Oliveira
+- Mikah Liz Oliveira Silva
 - Uri Dicaio Silva
-- Zeli Oliveira Silva
 
 ## Revisita ao Projeto e Justificativa da PoC
 Com base na modelagem estratégica da primeira etapa, revisitamos as jornadas de uso e definimos que a nossa **Prova de Conceito (PoC)** focará na rotina de **consulta e atualização de cadastros de prestadores terceirizados** pelo usuário do RH (Gustavo). 
