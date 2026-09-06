@@ -1,4 +1,4 @@
-# Arquitetura e modelo de dados
+# Arquitetura e Modelo de Dados
 
 ## Fluxo técnico
 
@@ -11,7 +11,7 @@ flowchart LR
   E -->|Resultado e erro| A
 ```
 
-As rotas HTTP usam Node.js. Dados persistem em `data/elo.sqlite`, fora do Git. Não há mock no fluxo funcional. A carga inicial é sintética, gravada no mesmo banco e acessada pelas mesmas rotas. O processo servidor deve ter acesso a disco persistente. O frontend compartilha com o backend o esquema de validação; a validação definitiva permanece no servidor.
+As rotas HTTP usam Node.js. Dados persistem em `data/elo.sqlite`, fora do Git. Não há mock no fluxo funcional. A carga inicial é sintética, gravada no mesmo banco e acessada pelas mesmas rotas. O frontend compartilha com o backend o esquema de validação; a validação definitiva permanece no servidor.
 
 ## Entidades e atributos
 
@@ -23,7 +23,7 @@ As rotas HTTP usam Node.js. Dados persistem em `data/elo.sqlite`, fora do Git. N
 | `audit`          | Mudança de cadastro: `id`; `personId` cadastro afetado; `actor` nome do responsável no momento; `action` criação/atualização; `changes` JSON com valores anteriores/novos; `createdAt` data ISO                                                                                                                                               |
 | `login_attempts` | Limitação de login: `email` identificador das tentativas; `attempts` contador; `expiresAt` fim da janela de bloqueio                                                                                                                                                                                                                          |
 
-O autor na auditoria é um texto histórico, não chave estrangeira para usuário: permite representar a carga inicial de demonstração e preservar o nome registrado. A versão atual não tem renomeação/remoção de contas pela interface.
+O autor na auditoria é um texto histórico, não chave estrangeira para usuário: permite representar a carga inicial de demonstração e preservar o nome registrado.
 
 ## DER
 
@@ -88,8 +88,4 @@ Criação e atualização usam `BEGIN IMMEDIATE`: o registro e a auditoria são 
 | GET `/api/stats`                                   | Totais e distribuição de vínculos          |
 | GET `/api/history`                                 | Últimos 100 eventos globais                |
 
-Não há endpoint público de leitura dos cadastros. JSON inválido ou campos inválidos retornam 400; sem sessão 401; origem/papel não permitido 403; inexistente 404; duplicidade/conflito 409. Mensagens inesperadas do banco não são expostas ao usuário.
-
-## Operação
-
-O setup cria contas e registros ausentes, sem sobrescrever os existentes. `.env.local`, dados e ferramentas locais são ignorados pelo Git. Em operação real, usar HTTPS, controlar acesso ao arquivo do banco, implementar recuperação de contas, backup/restauração e políticas institucionais. Para backup simples desta PoC, encerrar o servidor antes de copiar a pasta `data` completa; não copiar somente o arquivo principal enquanto houver gravações em WAL.
+Não há endpoint público de leitura dos cadastros. JSON inválido ou campos inválidos retornam 400; sem sessão 401; origem/papel não permitido 403; inexistente 404; duplicidade/conflito 409.
