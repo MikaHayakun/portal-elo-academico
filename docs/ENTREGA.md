@@ -6,7 +6,7 @@ Base: quarta webconferência, pp. 19–23, e quinta, pp. 18–22.
 
 | Critério                        | Peso | Artefato                                                                                    |
 | ------------------------------- | ---: | ------------------------------------------------------------------------------------------- |
-| Revisitar projeto e definir PoC |  1,0 | `REQUISITOS.md`: revisão justificada e jornada do RH                                        |
+| Revisitar projeto e definir PoC |  1,0 | `REQUISITOS.md`: revisão justificada e rotina do RH                                         |
 | Preparar ambiente               |  2,0 | README, package-lock, .nvmrc, setup e instruções                                            |
 | Frontend                        |  2,0 | Interface Next.js/React responsiva com consulta e formulário                                |
 | Backend e dados                 |  2,0 | Rotas HTTP, SQLite persistente, regras e auditoria                                          |

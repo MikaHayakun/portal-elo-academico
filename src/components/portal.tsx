@@ -696,10 +696,11 @@ export default function Portal({ user }: { user: User }) {
                   demonstração.
                 </p>
                 <p>
-                  A jornada escolhida é a de Gustavo, do RH, consultando e
-                  atualizando prestadores. Cada cadastro possui um vínculo
-                  principal. Integração com sistemas externos, importação de
-                  planilhas e CNPJ alfanumérico estão fora desta versão.
+                  Neste portal, acompanhamos a rotina de Gustavo, do RH, ao
+                  consultar e atualizar os cadastros de prestadores. Cada
+                  cadastro tem um vínculo principal com a instituição. Esta
+                  versão não inclui integração com sistemas externos, importação
+                  de planilhas nem suporte a CNPJ alfanumérico.
                 </p>
               </div>
             </div>

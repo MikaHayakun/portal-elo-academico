@@ -24,7 +24,7 @@ Stakeholders: equipe operacional de RH/secretaria (agilidade), administração (
 | Atualização e sessão implícitas no texto               | Cadastro, edição, login e confirmação explicitados      | Torna o escopo verificável                                |
 | Busca avançada e segurança genéricas                   | Filtros definidos, validação, sessão e regras de acesso | Limita a promessa ao comportamento demonstrável           |
 
-## Jornada selecionada
+## Rotina de Gustavo no portal
 
 1. Gustavo entra com sua conta de RH.
 2. Seleciona vínculo Prestador, tipo PF e busca documento ou nome.
@@ -40,7 +40,7 @@ Stakeholders: equipe operacional de RH/secretaria (agilidade), administração (
 | ---- | ------------------- | --------------------------------------------------------------------------------------- | ------------------------------- |
 | RF01 | Autenticar equipe   | Credencial correta abre portal; inválida informa erro; API sem sessão retorna 401       | Testes E2E de acesso            |
 | RF02 | Cadastrar PF/PJ     | Campos válidos geram registro persistido e evento de criação                            | E2E cadastro PJ; teste do banco |
-| RF03 | Pesquisar cadastros | Busca por nome/nome social/documento e filtros combinados retornam resultados coerentes | E2E jornada RH                  |
+| RF03 | Pesquisar cadastros | Busca por nome/nome social/documento e filtros combinados retornam resultados coerentes | E2E fluxo de trabalho do RH     |
 | RF04 | Consultar e editar  | Ficha permite revisão e confirmação; versão atualizada é recuperável                    | E2E edição e recarga            |
 | RF05 | Tratar alternativas | Entrada inválida, duplicidade e busca vazia produzem mensagens; cancelar não grava      | E2E validação e cancelamento    |
 | RF06 | Auditar alterações  | Autor, data e valores antes/depois são registrados na mesma transação                   | Teste do banco e E2E histórico  |

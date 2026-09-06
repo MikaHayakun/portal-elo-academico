@@ -13,7 +13,7 @@ Verificação local em 05/09/2026, Node.js 24.15.0, Next.js 16.3.4 e Chromium in
 | Vídeo                       | MP4, 54,96 segundos, demonstração real com legendas                                        |
 | Dados locais e senhas       | Fora do versionamento por `.gitignore`                                                     |
 
-Cenários do navegador: proteção de rotas e login inválido; jornada do RH com gravação e recarga; cadastro PJ, documento inválido, duplicidade, inativação e busca sem resultado; cancelamento, permissão e conflito de edição; navegação em 390 px e ausência de erros JavaScript; verificação automatizada de acessibilidade.
+Cenários do navegador: proteção de rotas e login inválido; fluxo de trabalho do RH com gravação e recarga; cadastro PJ, documento inválido, duplicidade, inativação e busca sem resultado; cancelamento, permissão e conflito de edição; navegação em 390 px e ausência de erros JavaScript; verificação automatizada de acessibilidade.
 
 Os testes de domínio verificam CPF/CNPJ numérico, restrições de PJ e e-mail, persistência, unicidade, auditoria, concorrência e hash de senha. Capturas reais foram inspecionadas visualmente; um excesso horizontal da tabela na tela móvel foi corrigido e incluído na regressão.
 

@@ -36,7 +36,7 @@ test("protege dados e rejeita login inválido e origem externa", async ({
     ).status(),
   ).toBe(403);
 });
-test("jornada RH: filtra, edita, confirma persistência, audita e encerra sessão", async ({
+test("fluxo de trabalho do RH: filtra, edita, confirma persistência, audita e encerra sessão", async ({
   page,
 }) => {
   await login(page, "operator");

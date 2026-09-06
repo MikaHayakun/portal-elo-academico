@@ -48,7 +48,7 @@ O servidor escuta somente em `127.0.0.1`. `APP_ORIGIN` deve coincidir com o ende
 - Indicadores calculados a partir do banco, visão geral e guia de uso.
 - Layout responsivo, controles por teclado e mensagens de erro/sucesso.
 
-A jornada da PoC representa **Gustavo, do RH, consultando e atualizando um prestador**. Dados iniciais são sintéticos, não destinados a contato ou uso institucional real.
+A demonstração acompanha **a rotina de Gustavo, do RH, ao consultar e atualizar o cadastro de um prestador**. Os dados iniciais são fictícios e servem apenas para demonstração.
 
 ## Tecnologias e organização
 
