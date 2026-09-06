@@ -10,7 +10,7 @@ Aplicação Web para centralizar cadastros de pessoas físicas e jurídicas de u
 
 - Adrian Juan De Oliveira Silva
 - Everton de Oliveira Amaral
-- [Ludmylla Fernanda Costa Oliveira](https://github.com/Ludmylla-Costa)
+- Ludmylla Fernanda Costa Oliveira
 - Uri Dicaio Silva
 - Zeli Oliveira Silva
 
