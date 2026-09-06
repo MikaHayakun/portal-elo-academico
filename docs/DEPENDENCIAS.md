@@ -40,21 +40,19 @@ A revisão cobre os registros do lockfile e o uso das dependências pelo projeto
 
 Foi utilizado `npm dedupe`, primeiro em simulação e depois em uma cópia isolada. O npm removeu as cópias aninhadas de `@eslint-community/eslint-utils` e `eslint-visitor-keys` sob `@next/eslint-plugin-next`. Os solicitantes passaram a compartilhar as cópias compatíveis existentes na árvore.
 
-A cópia compartilhada de `@eslint-community/eslint-utils` passou de 4.10.1 para 4.9.1, versão exigida exatamente por `@next/eslint-plugin-next@16.3.4` e aceita pelos demais solicitantes. Essa consolidação é restrita à análise de código. Todas as entradas de execução e os pacotes de plataforma permaneceram idênticos. Nenhuma versão direta foi alterada e nenhum campo do lockfile foi apagado manualmente. Consulte o funcionamento de [npm dedupe](https://docs.npmjs.com/cli/v11/commands/npm-dedupe/).
+A cópia compartilhada de `@eslint-community/eslint-utils` passou de 4.10.1 para 4.9.1, versão exigida exatamente por `@next/eslint-plugin-next@16.3.4` e aceita pelos demais solicitantes.
 
 As outras versões repetidas foram mantidas: não se deve forçar uma única versão quando os solicitantes exigem faixas diferentes.
 
 ## Pendência de manutenção
 
-O ESLint 9.39.5 está fora de suporte desde 06/08/2026, conforme a [política oficial de versões](https://eslint.org/version-support/). Os plugins instalados `eslint-plugin-react@7.37.5`, `eslint-plugin-jsx-a11y@6.10.2` e `eslint-plugin-import@2.32.0` ainda declaram faixas de compatibilidade que não incluem ESLint 10. A migração foi deixada como pendência para uma atualização conjunta compatível, sem forçar a instalação ou retirar verificações existentes.
+O ESLint 9.39.5 está fora de suporte desde 06/08/2026, conforme a [política oficial de versões](https://eslint.org/version-support/). Os plugins instalados `eslint-plugin-react@7.37.5`, `eslint-plugin-jsx-a11y@6.10.2` e `eslint-plugin-import@2.32.0` ainda declaram faixas de compatibilidade que não incluem ESLint 10.
 
 ## Validação
 
-A versão candidata foi instalada com `npm ci` em uma cópia dos arquivos versionados, sem copiar as credenciais ou o banco local. Foram aprovados:
+Foram aprovados:
 
 - Instalação limpa e resolução da árvore sem erros obrigatórios.
 - ESLint, TypeScript e compilação de produção.
 - Quatro testes de domínio e seis cenários de navegador, com banco temporário.
-- Auditoria npm sem vulnerabilidades conhecidas reportadas, antes e após a limpeza. Esse resultado é datado e não equivale a uma certificação de segurança.
-
-O lockfile aplicado ao projeto foi comparado byte a byte com o arquivo validado na cópia isolada. Os arquivos da aplicação e os dados locais não foram alterados.
+- Auditoria npm sem vulnerabilidades conhecidas reportadas, antes e após a limpeza.
