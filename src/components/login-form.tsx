@@ -55,10 +55,8 @@ export default function LoginForm() {
             PESSOAS CONECTADAS. GESTÃO SIMPLIFICADA.
           </span>
           <h1>
-            O próximo capítulo
-            <br />
-            da sua gestão
-            <br />
+            O próximo capítulo <br />
+            da sua gestão <br />
             <em>começa aqui.</em>
           </h1>
           <p>

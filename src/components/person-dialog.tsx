@@ -47,7 +47,10 @@ export function HistoryList({ items }: { items: Audit[] }) {
             </p>
             <details>
               <summary>
-                {Object.keys(item.changes).length} campo(s) registrado(s)
+                {Object.keys(item.changes).length}{" "}
+                {Object.keys(item.changes).length === 1
+                  ? "campo registrado"
+                  : "campos registrados"}
               </summary>
               <dl>
                 {Object.entries(item.changes).map(([key, change]) => (

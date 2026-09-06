@@ -42,7 +42,7 @@ export const personSchema = z
       ctx.addIssue({
         code: "custom",
         path: ["socialName"],
-        message: "Nome social se aplica somente a pessoa física.",
+        message: "O nome social aplica-se somente a pessoas físicas.",
       });
   });
 
