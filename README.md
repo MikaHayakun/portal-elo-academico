@@ -66,7 +66,7 @@ A demonstração acompanha **a rotina de Gustavo, do RH, ao consultar e atualiza
 
 ## Tecnologias e organização
 
-Next.js App Router, React, TypeScript, HTML semântico e CSS próprio; Zod para validação compartilhada, Lucide para ícones, SQLite nativo para persistência, Playwright para testes de navegador, axe-core para verificações automatizadas de acessibilidade, ESLint e Prettier para qualidade do código. As versões exatas estão no `package-lock.json`.
+Next.js App Router, React, TypeScript, HTML semântico e CSS próprio; Zod para validação compartilhada, Lucide para ícones, SQLite nativo para persistência, Playwright para testes de navegador, axe-core para verificações automatizadas de acessibilidade, ESLint e Prettier para qualidade do código. As versões exatas estão no `package-lock.json`
 
 ```text
 src/app/             páginas, estilos e rotas HTTP
